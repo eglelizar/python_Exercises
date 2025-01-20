@@ -1,7 +1,7 @@
 print("Welcome to Python Piza Deliveries!")
 size = input("What size pizza do you want? S, M or L: ")
 pepperoni = input ("Do you want pepperoni on your pizza? Y or N: ")
-extra_cheese = input ("Do you want extra chees? Y or N? ")
+extra_cheese = input ("Do you want extra cheese? Y or N? ")
 cost = 0.0
 
 if (size == 'S'):

@@ -1,1 +1,0 @@
-# fruits = [item1, item2]
