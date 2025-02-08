@@ -1,0 +1,1 @@
+print(travel_log['United Kingdom']['cities_visited'])
