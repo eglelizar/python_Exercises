@@ -1,0 +1,73 @@
+*************List - []
+my_list = [1, 2, 3, 'example', 3.132, 10, 30]
+
+my_list.append([555, 12]) #add as a single element
+[1, 2, 3, [555, 12]]
+
+my_list.extend([234, 'more_example'])
+[1, 2, 3, [555, 12], 234, ‘more_example’]
+
+del my_list[5]
+
+*************Dictionary - {}
+
+my_dict = {'First': 'Python', 'Second': 'Java'}
+{‘First’: ‘Python’, ‘Second’: ‘Java’}
+
+my_dict['Second'] = 'C++' #changing element
+{‘First’: ‘Python’, ‘Second’: ‘C++’}
+
+my_dict['Third'] = 'Ruby' #adding key-value pair
+{‘First’: ‘Python’, ‘Second’: ‘C++’, ‘Third’: ‘Ruby’}
+
+print(my_dict['First']) #access elements using keys
+print(my_dict.get('Second'))
+
+my_dict = {'First': 'Python', 'Second': 'Java', 'Third': 'Ruby'}
+print(my_dict.keys()) #get keys
+print(my_dict.values()) #get values
+print(my_dict.items()) #get key-value pairs
+print(my_dict.get('First'))
+
+*************Tuple - ()
+my_tuple = (1, 2, 3)
+
+my_tuple2 = (1, 2, 3, 'edureka') #access elements
+for x in my_tuple2:
+    print(x)
+print(my_tuple2)
+print(my_tuple2[0])
+print(my_tuple2[:])
+print(my_tuple2[3][4])
+
+my_tuple = (1, 2, 3)
+my_tuple = my_tuple + (4, 5, 6) #add elements
+
+
+****************Sets - {}
+my_set = {1, 2, 3, 4, 5, 5, 5}
+my_set = {1, 2, 3, 4}
+my_set_2 = {3, 4, 5, 6}
+print(my_set.union(my_set_2), '----------', my_set | my_set_2)
+print(my_set.intersection(my_set_2), '----------', my_set & my_set_2)
+print(my_set.difference(my_set_2), '----------', my_set - my_set_2)
+print(my_set.symmetric_difference(my_set_2), '----------', my_set ^ my_set_2)
+my_set.clear()
+
+List -> heterogeneous data elements
+Arrays -> homogenous elements
+
+Stack -> LIFO (Last In First Out)
+    Push
+    Pop
+
+Queue -> FIFO (First In First Out)
+    Enqueue
+    Dequeue
+
+Tree is not linear structure
+
+Linked List
+     Node
+        Data
+        Pointer

@@ -1,0 +1,2 @@
+def FindIfAStringIsPalindrome(s):
+    i

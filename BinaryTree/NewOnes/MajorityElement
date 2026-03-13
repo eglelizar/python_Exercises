@@ -1,0 +1,43 @@
+# nums [2,3,4,4,3,4]
+# 3
+
+# max_mean  majority ()
+
+class Majority:
+    nums = {}
+
+    def __init__ (self, num):
+        for k in num:
+            self.setNumOfOcurrences(k)
+
+    def setNumOfOcurrences(self, num):
+        dic = self.nums
+        val = 0
+        if (num in dic):
+            val = dic[num]
+        dic[num] = val + 1
+
+
+    def getMajorityNum (self):
+        maxMean= 0.0
+        maxVal = 0
+        array = self.nums
+
+        #max of average
+        for v in array:
+            mean = array[v]/2
+            if (maxMean < mean):
+                maxMean = mean
+                maxVal = v
+
+        return maxVal
+
+        
+
+class Solution:
+    def majorityElement(self, nums) -> int:
+        obj = Majority(nums)
+        print(obj.getMajorityNum())
+
+sol = Solution()
+sol.majorityElement([1])
